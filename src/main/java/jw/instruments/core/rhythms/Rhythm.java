@@ -25,7 +25,7 @@ public interface Rhythm {
     default String getSoundName(int noteId, String guitarName)
     {
         noteId +=1;
-        return "minecraft:"+guitarName+noteId;
+        return "instruments:"+guitarName+noteId;
     }
 
     default void emitEvent(NoteEvent noteEvent){};
